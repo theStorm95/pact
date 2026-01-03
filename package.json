@@ -1,0 +1,13 @@
+{
+  "name": "pact-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "mobile": "cd apps/mobile && npx expo start",
+    "mobile:ios": "cd apps/mobile && npx expo start --ios",
+    "mobile:android": "cd apps/mobile && npx expo start --android"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
