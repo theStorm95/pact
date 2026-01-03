@@ -26,10 +26,10 @@
 
 **Purpose**: Verify development environment prerequisites before monorepo initialization
 
-- [X] T001 Verify Node.js 18+ is installed (`node --version`)
-- [X] T002 Verify pnpm 8+ is installed (`pnpm --version`)
-- [X] T003 [P] Verify Xcode and iOS simulator available (macOS only) (`xcode-select -p`)
-- [X] T004 [P] Verify Android Studio and Android emulator configured (`echo $ANDROID_HOME`)
+- [x] T001 Verify Node.js 18+ is installed (`node --version`)
+- [x] T002 Verify pnpm 8+ is installed (`pnpm --version`)
+- [x] T003 [P] Verify Xcode and iOS simulator available (macOS only) (`xcode-select -p`)
+- [x] T004 [P] Verify Android Studio and Android emulator configured (`echo $ANDROID_HOME`)
 
 **Checkpoint**: Prerequisites verified - ready to initialize monorepo structure
 
@@ -43,14 +43,14 @@
 
 ### Implementation for User Story 1
 
-- [X] T005 [US1] Create pnpm-workspace.yaml at root defining workspace patterns for `apps/*` and `packages/*`
-- [X] T006 [P] [US1] Create root package.json with workspace metadata, name "pact-monorepo", and private: true
-- [X] T007 [P] [US1] Create /apps directory for application code
-- [X] T008 [P] [US1] Create /packages directory for shared libraries
-- [X] T009 [US1] Add convenience scripts to root package.json: "mobile", "mobile:ios", "mobile:android"
-- [X] T010 [US1] Add TypeScript as workspace-level devDependency in root package.json (version ^5.3.0)
-- [X] T011 [US1] Run `pnpm install` at root to initialize workspace and verify no errors
-- [X] T012 [US1] Verify workspace structure with `pnpm list --depth=0`
+- [x] T005 [US1] Create pnpm-workspace.yaml at root defining workspace patterns for `apps/*` and `packages/*`
+- [x] T006 [P] [US1] Create root package.json with workspace metadata, name "pact-monorepo", and private: true
+- [x] T007 [P] [US1] Create /apps directory for application code
+- [x] T008 [P] [US1] Create /packages directory for shared libraries
+- [x] T009 [US1] Add convenience scripts to root package.json: "mobile", "mobile:ios", "mobile:android"
+- [x] T010 [US1] Add TypeScript as workspace-level devDependency in root package.json (version ^5.3.0)
+- [x] T011 [US1] Run `pnpm install` at root to initialize workspace and verify no errors
+- [x] T012 [US1] Verify workspace structure with `pnpm list --depth=0`
 
 **Checkpoint**: Monorepo structure complete - workspace recognized by pnpm, ready for application initialization
 
@@ -64,16 +64,16 @@
 
 ### Implementation for User Story 2
 
-- [X] T013 [US2] Initialize Expo app at /apps/mobile using `npx create-expo-app apps/mobile --template expo-template-blank-typescript`
-- [X] T014 [US2] Wait for Expo template initialization to complete (~30-60 seconds)
-- [X] T015 [US2] Update apps/mobile/tsconfig.json to enable strict mode in compilerOptions
-- [X] T016 [US2] Verify apps/mobile/package.json includes TypeScript dependency
-- [X] T017 [US2] Verify apps/mobile/package.json has correct name "@pact/mobile"
-- [X] T018 [US2] Run `pnpm install` from root to install mobile app dependencies via workspace
-- [X] T019 [US2] Verify apps/mobile/node_modules exists with symlinked dependencies
-- [X] T020 [US2] Start Expo dev server with `cd apps/mobile && npx expo start`
-- [X] T021 [US2] Verify dev server starts within 10 seconds with no errors (Success Criteria SC-002)
-- [X] T022 [US2] Verify QR code and platform options (i/a/w) appear in terminal
+- [x] T013 [US2] Initialize Expo app at /apps/mobile using `npx create-expo-app apps/mobile --template expo-template-blank-typescript`
+- [x] T014 [US2] Wait for Expo template initialization to complete (~30-60 seconds)
+- [x] T015 [US2] Update apps/mobile/tsconfig.json to enable strict mode in compilerOptions
+- [x] T016 [US2] Verify apps/mobile/package.json includes TypeScript dependency
+- [x] T017 [US2] Verify apps/mobile/package.json has correct name "@pact/mobile"
+- [x] T018 [US2] Run `pnpm install` from root to install mobile app dependencies via workspace
+- [x] T019 [US2] Verify apps/mobile/node_modules exists with symlinked dependencies
+- [x] T020 [US2] Start Expo dev server with `cd apps/mobile && npx expo start`
+- [x] T021 [US2] Verify dev server starts within 10 seconds with no errors (Success Criteria SC-002)
+- [x] T022 [US2] Verify QR code and platform options (i/a/w) appear in terminal
 
 **Checkpoint**: Mobile app initialized - Expo dev server running, ready for cross-platform testing
 
@@ -115,14 +115,14 @@
 
 **Purpose**: Ensure all success criteria met and workspace ready for future stories
 
-- [X] T037 Verify pnpm install completes within 60 seconds (Success Criteria SC-001)
-- [X] T038 Verify Expo dev server starts within 10 seconds (Success Criteria SC-002)
-- [X] T039 Verify zero errors or warnings during installation (Success Criteria SC-008)
-- [X] T040 Verify /packages directory exists and is configured in workspace (Success Criteria SC-007)
-- [X] T041 [P] Test adding a test package to /packages directory to verify workspace extensibility
-- [X] T042 [P] Create .gitignore at root with node_modules, .expo, dist patterns (if not exists from Expo)
-- [ ] T043 [P] Document any environment-specific setup notes in quickstart.md troubleshooting section
-- [ ] T044 Commit all changes to branch 001-monorepo-mobile with message "feat: initialize monorepo with mobile app foundation"
+- [x] T037 Verify pnpm install completes within 60 seconds (Success Criteria SC-001)
+- [x] T038 Verify Expo dev server starts within 10 seconds (Success Criteria SC-002)
+- [x] T039 Verify zero errors or warnings during installation (Success Criteria SC-008)
+- [x] T040 Verify /packages directory exists and is configured in workspace (Success Criteria SC-007)
+- [x] T041 [P] Test adding a test package to /packages directory to verify workspace extensibility
+- [x] T042 [P] Create .gitignore at root with node_modules, .expo, dist patterns (if not exists from Expo)
+- [x] T043 [P] Document any environment-specific setup notes in quickstart.md troubleshooting section
+- [x] T044 Commit all changes to branch 001-monorepo-mobile with message "feat: initialize monorepo with mobile app foundation"
 - [ ] T045 Push branch to remote and verify CI/CD passes (if configured)
 
 **Checkpoint**: All success criteria validated - ready for Stories 1.2 (Web App) and 1.3 (Backend)
