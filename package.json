@@ -5,7 +5,14 @@
   "scripts": {
     "mobile": "cd apps/mobile && npx expo start",
     "mobile:ios": "cd apps/mobile && npx expo start --ios",
-    "mobile:android": "cd apps/mobile && npx expo start --android"
+    "mobile:android": "cd apps/mobile && npx expo start --android",
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "preview:web": "pnpm --filter web preview"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   },
   "devDependencies": {
     "typescript": "^5.3.0"
