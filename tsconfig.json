@@ -5,7 +5,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "strict": true,
-    "baseUrl": ".",
     "paths": {
       "@pact/shared-types": ["./packages/shared/types"],
       "@pact/shared-api": ["./packages/shared/api"],

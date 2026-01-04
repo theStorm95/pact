@@ -8,7 +8,6 @@
     "module": "ESNext",
     "types": ["vite/client"],
     "skipLibCheck": true,
-    "baseUrl": ".",
     "paths": {
       "@pact/shared-types": ["../../packages/shared/types"],
       "@pact/shared-api": ["../../packages/shared/api"],
