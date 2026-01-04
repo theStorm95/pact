@@ -89,13 +89,13 @@
 
 #### iOS Simulator Testing
 
-- [ ] T023 [US3] With Expo dev server running, press `i` to open iOS simulator
-- [ ] T024 [US3] Verify app launches on iOS simulator within 15 seconds (Success Criteria SC-003)
-- [ ] T025 [US3] Verify default Expo welcome screen displays ("Open up App.tsx to start working...")
-- [ ] T026 [US3] Modify apps/mobile/App.tsx - change text content to "Hot reload test - iOS"
-- [ ] T027 [US3] Save App.tsx and verify change appears on iOS simulator within 2 seconds (Success Criteria SC-005)
-- [ ] T028 [US3] Introduce syntax error in App.tsx and verify TypeScript error appears in terminal within 1 second (Success Criteria SC-006)
-- [ ] T029 [US3] Fix syntax error and verify app recovers via hot reload
+- [x] T023 [US3] With Expo dev server running, press `i` to open iOS simulator
+- [x] T024 [US3] Verify app launches on iOS simulator within 15 seconds (Success Criteria SC-003)
+- [x] T025 [US3] Verify default Expo welcome screen displays ("Open up App.tsx to start working...")
+- [x] T026 [US3] Modify apps/mobile/App.tsx - change text content to "Hot reload test - iOS"
+- [x] T027 [US3] Save App.tsx and verify change appears on iOS simulator within 2 seconds (Success Criteria SC-005)
+- [x] T028 [US3] Introduce syntax error in App.tsx and verify TypeScript error appears in terminal within 1 second (Success Criteria SC-006)
+- [x] T029 [US3] Fix syntax error and verify app recovers via hot reload
 
 #### Android Emulator Testing
 
