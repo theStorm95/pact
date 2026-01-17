@@ -19,6 +19,7 @@ lerna-debug.*
 .env
 .env.local
 .env*.local
+apps/backend/.env
 
 # IDE
 .vscode/
