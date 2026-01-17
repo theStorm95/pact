@@ -1,6 +1,12 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@pact/shared-types": ["../../packages/shared/types"],
+      "@pact/shared-api": ["../../packages/shared/api"],
+      "@pact/shared-utils": ["../../packages/shared/utils"],
+      "@pact/shared-hooks": ["../../packages/shared/hooks"]
+    }
   }
 }
